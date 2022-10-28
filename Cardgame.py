@@ -25,6 +25,23 @@ def maybe_double_last(cards: list):
 		return cards
 	return cards
 
+def return_list():
+	colors =  [
+        'black',
+        'brown',
+        'red',
+        'orange',
+        'yellow',
+        'green',
+        'blue',
+        'violet',
+        'grey',
+        'white']
+	return colors
+
+def value(colors):
+	return return_list().index(colors[0]) + return_list().index(colors[1])
+
 print(get_rounds(27))
 print(concatenate_rounds([27,28,29], [34,35]))
 print(list_cointains_round([27,28,29,24], 29))
@@ -34,3 +51,4 @@ print(approx_average_is_average([1,2,3]))
 print(approx_average_is_average([1,2,3,5,9]))
 print(average_even_is_average_odd([1,2,3,4]))
 print(maybe_double_last([5,10,11]))
+print(value(["brown", "black"]))
